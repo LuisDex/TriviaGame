@@ -1,0 +1,44 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trivia Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-sm-12 text-center" id="fftitle">
+        <img src="assets/images/FFTitle.png" class="img-fluid" alt="Final Fantasy Logo" id="fflogo">
+        <h1>TRIVIA GAME</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2" id="game-area">
+        <div class="jumbotron ffStyle">
+          <div class="container playscreen">
+            <p class="text-center" id="timer"></p>
+            <p class="text-center" id="askIt">Welcome to the Final Fantasy Trivia Game! Press the button to start!</p>
+            <hr class="my-4">
+            <button type="button" class="btn btn-secondary btn-lg btn-block start-btn">Start</button>
+            <div id="Qimage"></div>
+            <p class="text-center" id="answerIs"></p>
+            <p class="text-center" id="right"></p>
+            <p class="text-center" id="wrong"></p>
+            <p class="text-center" id="skipped"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body
+{
+background-image:url("../images/FFBack.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+@font-face
+ {
+   font-family: FinalFantasyFont;
+    src: url(finalf.ttf);
+  }
+.btn{
+  background-color: white;
+  color:navy;
+}
+.ffStyle
+  {
+    background-color:#04008b;
+    margin: 5px 10px 10px 0px;
+    font-family: Verdana, sans-serif;
+    border: white solid 2px;
+    color:white;
+  }
+
+.gameImage{
+  height:300px;
+  width:200px;
+}
+
+hr{
+  background-color:white;
+}
+#fflogo{
+    height: 150px;
+    width: 500px;
+}
+#fftitle
+{
+ padding-top:20px;
+ height: 30%;
+ font-size: 50px;
+}
