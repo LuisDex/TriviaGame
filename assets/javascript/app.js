@@ -29,6 +29,7 @@ var nextQ;
 var y=0;
 var rightText = "";
 var imageQ;
+var z=0;
 
 $(document).ready(function(){
 
@@ -85,12 +86,13 @@ function timeLeft()
   time--;
   } else {
     guessTimeOut++;
+    y++;
     emptyIt();
     $("#askIt").text("Times Up!");
-      y++;
       var showImg = $("<img>").attr("src", imageQ).addClass("mx-auto d-block gameImage");
       $("#Qimage").append(showImg);
     $("#answerIs").text("The correct answer was: " + rightText);
+    
     setTimeout(function(){quizIt(y)}, 5000);
   };
 };
@@ -151,17 +153,19 @@ time = 30;
 };
 
 //Function that cycles through the questions as they are answered
-function quizIt(y)
+function quizIt(t)
 {
+  console.log(t);
+  
   //Verifies if there are any questions remaining, if so then it continues with the game
-  if(y<10)
+  if(t<10)
  {
   //Sets and displays the timer for the question, shuffles answers and displays them along with the question
   countDown();
 
-  var answShuf = shuffleAnswers(sessionQ[y]);
+  var answShuf = shuffleAnswers(sessionQ[t]);
   dispAnswers(answShuf);
-  dispQuestion(sessionQ[y]);
+  dispQuestion(sessionQ[t]);
 
   //Listens for which answer the player clicks and verifies if they are right or wrong, assuming there is still time left to answer
   $(".btn").on("click",function(){
