@@ -155,8 +155,6 @@ time = 30;
 //Function that cycles through the questions as they are answered
 function quizIt(t)
 {
-  console.log(t);
-  
   //Verifies if there are any questions remaining, if so then it continues with the game
   if(t<10)
  {
